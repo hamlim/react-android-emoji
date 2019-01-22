@@ -1,5 +1,5 @@
 {
-  "name": "react-android-emoji",
+  "name": "@matthamlin/react-android-emoji",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Matthew Hamlin <hamlim@outlook.com> (https://matthamlin.me/)",
@@ -15,5 +15,8 @@
   },
   "scripts": {
     "convert": "node -r esm scripts/convert.mjs"
-  }
+  },
+  "files": [
+    "src/"
+  ]
 }

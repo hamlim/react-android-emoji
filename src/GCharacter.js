@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-function Emoji0x1f1ec(props) {
+function GCharacter(props) {
   return (
     <svg enableBackground="new 0 0 128 128" viewBox="0 0 128 128" {...props}>
       <path
@@ -8,7 +8,7 @@ function Emoji0x1f1ec(props) {
         fill="#40C0E7"
       />
     </svg>
-  );
+  )
 }
 
-export default Emoji0x1f1ec;
+export default GCharacter

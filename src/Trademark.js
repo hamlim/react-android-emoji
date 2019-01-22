@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-function Emoji0x00ae(props) {
+function Trademark(props) {
   return (
     <svg enableBackground="new 0 0 128 128" viewBox="0 0 128 128" {...props}>
       <linearGradient
@@ -21,14 +21,7 @@ function Emoji0x00ae(props) {
         d="m91.86 92-11.61-16.85c-0.5-0.95-0.15-2.11 0.81-2.69 2.88-1.73 5.28-3.92 7.13-6.51 2.62-3.67 3.95-8.24 3.95-13.59 0-7.84-2.59-13.95-7.68-18.16-4.98-4.11-12.06-6.2-21.02-6.2h-22c-3.31 0-6 2.69-6 6v60.8c0 3.31 2.69 6 6 6h4.85c3.31 0 6-2.69 6-6v-15.3c0-1.1 0.9-2 2-2h7.89c0.75 0 1.43 0.41 1.77 1.08l12.59 19c1.04 1.99 3.08 3.23 5.32 3.23h4.7c2.12 0 4.04-1.09 5.14-2.9 1.09-1.83 1.16-4.03 0.16-5.91zm-19.55-31.62c-2.05 1.83-5.02 2.77-8.82 2.77h-9.2c-1.1 0-2-0.9-2-2v-16.79c0-1.1 0.9-2 2-2h9.56c3.89 0.06 6.83 1 8.69 2.79s2.76 4.33 2.76 7.75c0 3.23-0.98 5.67-2.99 7.48z"
         fill="url(#b)"
       />
-      <linearGradient
-        id="a"
-        x1={64}
-        x2={64}
-        y1={3.2701}
-        y2={125.06}
-        gradientUnits="userSpaceOnUse"
-      >
+      <linearGradient id="a" x1={64} x2={64} y1={3.2701} y2={125.06} gradientUnits="userSpaceOnUse">
         <stop stopColor="#616161" offset={0} />
         <stop stopColor="#5B5B5B" offset={0.2231} />
         <stop stopColor="#484848" offset={0.5356} />
@@ -52,7 +45,7 @@ function Emoji0x00ae(props) {
         />
       </g>
     </svg>
-  );
+  )
 }
 
-export default Emoji0x00ae;
+export default Trademark

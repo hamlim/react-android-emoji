@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-function Emoji0x1f1ea(props) {
+function ECharacter(props) {
   return (
     <svg enableBackground="new 0 0 128 128" viewBox="0 0 128 128" {...props}>
       <path
@@ -8,7 +8,7 @@ function Emoji0x1f1ea(props) {
         fill="#40C0E7"
       />
     </svg>
-  );
+  )
 }
 
-export default Emoji0x1f1ea;
+export default ECharacter

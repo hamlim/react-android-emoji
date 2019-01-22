@@ -1,16 +1,9 @@
-import React from "react";
+import React from 'react'
 
-function EMinusmail(props) {
+function Email(props) {
   return (
     <svg enableBackground="new 0 0 128 128" viewBox="0 0 128 128" {...props}>
-      <linearGradient
-        id="e"
-        x1={64}
-        x2={64}
-        y1={36.833}
-        y2={104.33}
-        gradientUnits="userSpaceOnUse"
-      >
+      <linearGradient id="e" x1={64} x2={64} y1={36.833} y2={104.33} gradientUnits="userSpaceOnUse">
         <stop stopColor="#FFC107" offset={0} />
         <stop stopColor="#FFD54F" offset={1} />
       </linearGradient>
@@ -18,14 +11,7 @@ function EMinusmail(props) {
         d="m120 104h-112c-2.21 0-4-1.79-4-4v-72c0-2.21 1.79-4 4-4h112c2.21 0 4 1.79 4 4v72c0 2.21-1.79 4-4 4z"
         fill="url(#e)"
       />
-      <linearGradient
-        id="d"
-        x1={64}
-        x2={64}
-        y1={8.4562}
-        y2={72.154}
-        gradientUnits="userSpaceOnUse"
-      >
+      <linearGradient id="d" x1={64} x2={64} y1={8.4562} y2={72.154} gradientUnits="userSpaceOnUse">
         <stop stopColor="#FFE082" offset={0} />
         <stop stopColor="#FFCA28" offset={0.9931} />
       </linearGradient>
@@ -42,13 +28,7 @@ function EMinusmail(props) {
       <clipPath id="a">
         <use xlinkHref="#c" />
       </clipPath>
-      <g
-        clipPath="url(#a)"
-        fill="none"
-        stroke="#FFB300"
-        strokeMiterlimit={10}
-        strokeWidth={3}
-      >
+      <g clipPath="url(#a)" fill="none" stroke="#FFB300" strokeMiterlimit={10} strokeWidth={3}>
         <line x1={43.01} x2={-0.19} y1={60.76} y2={107.93} />
         <line x1={84.88} x2={128} y1={60.66} y2={108.12} />
       </g>
@@ -66,14 +46,7 @@ function EMinusmail(props) {
           fill="#444"
         />
       </g>
-      <linearGradient
-        id="b"
-        x1={64}
-        x2={64}
-        y1={31.901}
-        y2={95.573}
-        gradientUnits="userSpaceOnUse"
-      >
+      <linearGradient id="b" x1={64} x2={64} y1={31.901} y2={95.573} gradientUnits="userSpaceOnUse">
         <stop stopColor="#64B5F6" offset={0.0027503} />
         <stop stopColor="#2196F3" offset={1} />
       </linearGradient>
@@ -88,7 +61,7 @@ function EMinusmail(props) {
         />
       </g>
     </svg>
-  );
+  )
 }
 
-export default EMinusmail;
+export default Email
