@@ -2,6 +2,10 @@ import svgrModule from '@svgr/core'
 import emojiMap from 'emoji-unicode-to-name'
 import fs from 'fs'
 import prettier from 'prettier'
+import babel from '@babel/core'
+import svgoUniqueId from 'svgo-unique-id'
+
+const { transformSync } = babel
 
 const svgr = svgrModule.default
 
@@ -18,6 +22,11 @@ const svgrConfig = {
   template: svgTemplate,
   plugins: ['@svgr/plugin-prettier', '@svgr/plugin-jsx'],
   prettierConfig: { parser: 'babel' },
+  svgoConfig: {
+    plugins: [{ uniqueID: svgoUniqueId }],
+  },
+  dimensions: false,
+  svgo: true,
 }
 
 function readFiles() {
@@ -70,7 +79,13 @@ async function parseSVG(files) {
     try {
       const componentName = convertToReactComponent(emoji)
       let resultJSX = await svgr(raw, svgrConfig, { componentName })
-      fs.writeFileSync(`./src/${componentName}.js`, prettier.format(resultJSX, { parser: 'babel' }))
+      let { code } = transformSync(resultJSX, {
+        plugins: [
+          '@babel/plugin-transform-react-jsx',
+          'babel-plugin-transform-es2015-modules-commonjs',
+        ],
+      })
+      fs.writeFileSync(`./src/${componentName}.js`, prettier.format(code, { parser: 'babel' }))
     } catch (error) {
       console.log(error)
       return
