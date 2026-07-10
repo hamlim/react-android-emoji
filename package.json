@@ -5,7 +5,7 @@
   "author": "Matthew Hamlin <hamlim@outlook.com> (https://matthamlin.me/)",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.2.2",
+    "@babel/core": "7.29.6",
     "@babel/plugin-transform-react-jsx": "7.3.0",
     "@svgr/core": "4.1.0",
     "@svgr/plugin-jsx": "4.1.0",
